@@ -1,6 +1,6 @@
-import { useEffect } from "react"
-import styled from "styled-components"
-import { ThemeStyle } from "../styles/theme"
+import { useEffect } from 'react'
+import styled from 'styled-components'
+import { ThemeStyle } from '../styles/theme'
 
 type ToggleProps = {
 	theme: ThemeStyle,
@@ -42,7 +42,7 @@ const ToggleWrapper = styled.button`
 		&:first-child{
 			transform: ${({ lightTheme }) => lightTheme === 'light' ? 'translateY(0)' : 'translateY(50px)'};
 		}
-		
+
 		&:nth-child(2){
 			transform: ${({ lightTheme }) => lightTheme === 'dark' ? 'translateY(0)' : 'translateY(-50px)'};
 		}
